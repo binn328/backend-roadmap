@@ -1,5 +1,5 @@
 [
-{"id":"0","description":"hi","status":"TODO","createAt":"2025-06-12T17:27:27","updateAt":"2025-06-12T17:27:27"},
-{"id":"2","description":"buy eggs","status":"TODO","createAt":"2025-06-12T18:20:14","updateAt":"2025-06-12T18:20:14"},
-{"id":"3","description":"ham and eggs","status":"TODO","createAt":"2025-06-12T18:20:39","updateAt":"2025-06-12T18:20:39"}
+{"id":"0","description":"clean my room","status":"TODO","createAt":"2025-06-12T19:07:19","updateAt":"2025-06-12T19:07:19"},
+{"id":"1","description":"cook dinner","status":"IN_PROGRESS","createAt":"2025-06-12T19:07:28","updateAt":"2025-06-12T19:07:28"},
+{"id":"2","description":"build my PC","status":"DONE","createAt":"2025-06-12T19:07:53","updateAt":"2025-06-12T19:07:53"}
 ]
