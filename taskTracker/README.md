@@ -1,6 +1,8 @@
 # Task Tracker CLI
 
 이 프로그램은 CLI에서 구동되는 간단한 작업 추적기입니다. 작업을 추가, 갱신, 삭제하거나 작업의 상태를 설정할 수 있습니다.
+
+
 [roadmap.sh](https://roadmap.sh)에서 제공하는 [task-tracker](https://roadmap.sh/projects/task-tracker) 프로젝트입니다.
 
 ## 기능
