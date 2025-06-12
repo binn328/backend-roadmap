@@ -18,11 +18,41 @@ public class TaskTrackerCli {
         }
         
         switch(command) {
-            case "add" -> tm.add(arg1);
-            case "update" -> tm.update(Integer.parseInt(arg1), arg2);
-            case "delete" -> tm.delete(Integer.parseInt(arg1));
-            case "mark-in-progress" -> tm.mark(Integer.parseInt(arg1), Status.IN_PROGRESS);
-            case "mark-done" -> tm.mark(Integer.parseInt(arg1), Status.DONE);
+            case "add" -> {
+                if (arg1 == null || arg1.isEmpty()) {
+                    System.out.println("usage: TaskTrackerCli add <description>");
+                    return;
+                }
+                tm.add(arg1);
+            }
+            case "update" -> {
+                if (arg1 == null || arg1.isEmpty() || arg2 == null || arg2.isEmpty()) {
+                    System.out.println("usage: TaskTrackerCli update <task id> <description to change>");
+                    return;
+                }
+                tm.update(Integer.parseInt(arg1), arg2);
+            }
+            case "delete" -> {
+                if (arg1 == null || arg1.isEmpty()) {
+                    System.out.println("usage: TaskTrackerCli delete <task id>");
+                    return;
+                }
+                tm.delete(Integer.parseInt(arg1));
+            }
+            case "mark-in-progress" -> {
+                if (arg1 == null || arg1.isEmpty()) {
+                    System.out.println("usage: TaskTrackerCli mark-in-progress <task id to mark>");
+                    return;
+                }
+                tm.mark(Integer.parseInt(arg1), Status.IN_PROGRESS);
+            }
+            case "mark-done" -> {
+                if (arg1 == null || arg1.isEmpty()) {
+                    System.out.println("usage: TaskTrackerCli mark-done <task id to mark>");
+                    return;
+                }
+                tm.mark(Integer.parseInt(arg1), Status.DONE);
+            }
             case "list" -> {
                 if (arg1 == null || arg1.isEmpty()) {
                     tm.listAll();
